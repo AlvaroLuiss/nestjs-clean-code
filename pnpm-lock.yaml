@@ -78,6 +78,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.3.1)(terser@5.19.2))
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       prisma:
         specifier: ^5.2.0
         version: 5.2.0
@@ -1373,6 +1376,10 @@ packages:
 
   dotenv@16.1.4:
     resolution: {integrity: sha512-m55RtE8AsPeJBpOIFKihEmqUcoVncQIwo7x9U8ZwLEZw9ZpXboz2c+rvog+jUaJvVrZ5kBOeYQBX5+8Aa/OZQw==}
+    engines: {node: '>=12'}
+
+  dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
 
   eastasianwidth@0.2.0:
@@ -4598,6 +4605,8 @@ snapshots:
   dotenv-expand@10.0.0: {}
 
   dotenv@16.1.4: {}
+
+  dotenv@16.4.5: {}
 
   eastasianwidth@0.2.0: {}
 
