@@ -35,3 +35,4 @@ afterAll(async () => {
     await prisma.$executeRawUnsafe(`DROP SCHEMA IF EXISTS "${schemaId}" CASCADE`)
     await prisma.$disconnect()
 })
+''
