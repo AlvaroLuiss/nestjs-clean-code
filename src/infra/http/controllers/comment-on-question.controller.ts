@@ -14,7 +14,7 @@ const bodyValidationPipe = new ZodValidationPipe(commentOnQuestionBodySchema)
 type CommentOnQuestionBodySchema = z.infer<typeof commentOnQuestionBodySchema>
 
 @Controller('/questions/:questionId/comments')
-export class commentOnQuestionController {
+export class CommentOnQuestionController {
   constructor(
     private acommentOnQuestion: CommentOnQuestionUseCase
 
