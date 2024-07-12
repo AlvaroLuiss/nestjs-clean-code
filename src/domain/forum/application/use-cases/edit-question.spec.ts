@@ -103,7 +103,7 @@ describe('Edit Question', () => {
 
     inMemoryQuestionAttachmentsRepository.items.push(
       makeQuestionAttachment({
-        questionId: newQuestion.id,
+        questionId: newQuestion.id,  
         attachmentId: new UniqueEntityID('1'),
       }),
       makeQuestionAttachment({
