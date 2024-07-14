@@ -18,6 +18,10 @@ export interface QuestionProps {
 }
 
 export class Question extends AggregateRoot<QuestionProps> {
+  attachmentId(attachmentId: any): unknown {
+    throw new Error('Method not implemented.')
+  }
+  questionId: any
   get authorId() {
     return this.props.authorId
   }
