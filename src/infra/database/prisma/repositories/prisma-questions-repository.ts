@@ -81,10 +81,10 @@ export class PrismaQuestionsRepository implements QuestionsRepository {
       ),
 
       
-    await this.questionAttachmentsRepository.deleteMany(
-      question.attachments.getRemovedItems()
-    )
-  ])
+      await this.questionAttachmentsRepository.deleteMany(
+        question.attachments.getRemovedItems()
+      )
+    ])
   }
 
   async delete(question: Question): Promise<void> {
