@@ -11,7 +11,7 @@ interface QuestionsDetailsProps {
     slug: Slug,
     content: string,
     attachments: Attachment[],
-    bestAnswerId?: UniqueEntityID
+    bestAnswerId?: UniqueEntityID | null
     createdAt: Date,
     updatedAt?: Date | null
 }

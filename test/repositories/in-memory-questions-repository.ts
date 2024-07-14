@@ -5,7 +5,7 @@ import { Question } from '@/domain/forum/enterprise/entities/question'
 import { InMemoryStudentsRepository } from './in-memory-students-repository'
 import { InMemoryAttachmentsRepository } from './in-memory-attachments-repository'
 import { InMemoryQuestionAttachmentsRepository } from './in-memory-question-attachments-repository'
-import { QuestionDetails } from '@/domain/forum/enterprise/entities/value-objects/question-details'
+import { QuestionsDetails } from '@/domain/forum/enterprise/entities/value-objects/question-details'
 
 export class InMemoryQuestionsRepository implements QuestionsRepository {
   public items: Question[] = []
@@ -73,7 +73,7 @@ export class InMemoryQuestionsRepository implements QuestionsRepository {
       return attachment
     })
 
-    return QuestionDetails.create({
+    return QuestionsDetails.create({
       questionId: question.id,
       authorId: question.authorId,
       author: author.name,
