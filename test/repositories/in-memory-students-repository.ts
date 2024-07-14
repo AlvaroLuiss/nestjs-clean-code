@@ -1,6 +1,5 @@
 import { DomainEvents } from '@/core/events/domain-events'
 import { StudentRepository } from '@/domain/forum/application/repositories/student-repository'
-import { Question } from '@/domain/forum/enterprise/entities/question'
 import { Student } from '@/domain/forum/enterprise/entities/student'
 
 export class InMemoryStudentsRepository implements StudentRepository {
@@ -16,11 +15,9 @@ export class InMemoryStudentsRepository implements StudentRepository {
     return student
   }
 
-
   async create(student: Student) {
     this.items.push(student)
 
     DomainEvents.dispatchEventsForAggregate(student.id)
   }
-
 }
