@@ -56,7 +56,7 @@ describe('Delete answer comment (E2E)', () => {
       authorId: user.id,
     })
 
-    const answerComment = await answerCommentFactory.makePrismaAnswer({
+    const answerComment = await answerCommentFactory.makePrismaAnswerComment({
       answerId: answer.id,
       authorId: user.id,
     })
