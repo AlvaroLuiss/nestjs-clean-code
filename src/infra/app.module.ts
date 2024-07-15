@@ -3,8 +3,8 @@ import { ConfigModule } from '@nestjs/config'
 import { envSchema } from '@/infra/env/env'
 import { AuthModule } from './auth/auth.module'
 import { HttpModule } from './http/http.module'
-import { EnvService } from './env/env.service'
 import { EnvModule } from './env/env.module'
+import { EventModule } from './events/events.module'
 
 @Module({
   imports: [
@@ -15,6 +15,7 @@ import { EnvModule } from './env/env.module'
     AuthModule,
     HttpModule,
     EnvModule,
+    EventModule
   ]
 })
 export class AppModule {}
